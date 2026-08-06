@@ -1,0 +1,40 @@
+# ── DJI Thermal SDK ──────────────────────────────────────────────────
+# Proprietary. Ships under DJI's own EULA and must not be redistributed.
+# Download it from DJI and point at it with:
+#   $env:DJI_THERMAL_SDK_LIB = "C:\path\to\libdirp.dll"
+pure_math_pipeline/vendor/
+**/dji_thermal_sdk*/
+libdirp.*
+*.so
+*.dll
+*.dylib
+
+# ── Site imagery ─────────────────────────────────────────────────────
+# UNCOMMENT the next two lines if the rooftop captures are client data.
+# This repository is public — anything committed here is world-readable,
+# and image EXIF from a drone normally carries GPS coordinates.
+# KHBPRooftops/
+# pure_math_pipeline/results/
+
+# ── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+venv/
+.venv/
+env/
+
+# ── Secrets / environment ────────────────────────────────────────────
+.env
+*.key
+
+# ── OS / editor noise ────────────────────────────────────────────────
+.DS_Store
+__MACOSX/
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
